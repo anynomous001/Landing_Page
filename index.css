@@ -1,0 +1,194 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Bebas Neue';
+}
+
+.menu-btn {
+    width: 2.5em;
+    cursor: pointer;
+}
+
+.top-bg-container {
+    height: 100vh;
+    position: absolute;
+    width: 90%;
+    top: 0;
+    right: 0;
+    display: grid;
+    grid-template-columns: 80% auto;
+    z-index: -1;
+}
+
+.light-streaks {
+    background: #B2DD9E url('./assets/streaks.jpg');
+    background-blend-mode: screen;
+    background-size: cover;
+    height: 100vh;
+}
+
+.blue-col {
+    background-color: #7988BE;
+}
+
+.container {
+    margin: 0 1em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: inline-block;
+    background-color: black;
+    padding: .2em .4em;
+    color: white;
+    font-size: 1.8rem;
+}
+
+.logo span {
+    color: #6889FF;
+}
+
+nav ul {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 66%;
+    background-color: #363B4E;
+    height: 100vh;
+    z-index: 2;
+    padding: 2em 0;
+    transform: translateX(100%);
+    transition: transform .3s;
+}
+
+nav ul li a {
+    color: white;
+    display: block;
+    padding: .4em 1.5em;
+    font-size: 1.5rem;;
+    text-align: right;
+}
+
+.exit-btn {
+    text-align: right;
+}
+
+.exit-btn img {
+    width: 2em;
+    margin: 2em;
+    cursor: pointer;
+}
+
+.content {
+    text-align: center;
+    margin: 8em 3em 0;
+    height: 72vh;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: normal;
+    line-height: 92%;
+}
+
+.type p {
+    font-family: 'Montserrat';
+    font-size: 1.125rem;
+    line-height: 141.6%;
+}
+
+.drone-container {
+    position: relative;
+    margin: 5em auto;
+    width: 65%;
+}
+
+.blur, .drone {
+    position: absolute;
+    left: 0;
+}
+
+.blur {
+    opacity: .3;
+    top: 1em;
+    animation: pulse 2s alternate-reverse infinite;
+}
+
+.drone {
+    animation: hover 2s alternate-reverse infinite;
+}
+
+@keyframes hover {
+    from {
+        transform: translateY(-30px);
+    }
+}
+
+@keyframes pulse {
+    from {
+        opacity: 0;
+    }
+}
+
+
+.quote{
+    width: 90%;
+        background-color: #303853;
+height: 75vh;
+position: relative;
+margin-left:auto ;
+padding: 3em 2em;
+}
+.quote::before{
+    content: '';
+background-image: url('./assets/stadium.jpg')  ;
+opacity: 17%;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+position: absolute;
+}
+
+blockquote {
+    color: white;
+    margin: 0 0 2em 0;
+    width: 90%;
+    font-size: 1.5rem;
+}
+
+cite {
+    position: relative;
+    padding-left: 1.5em;
+}
+
+cite:before {
+    content: '';
+    position: absolute;
+    width: 1em;
+    border-bottom: 1px solid white;
+    left: 0;
+    top: 50%;
+}
+
